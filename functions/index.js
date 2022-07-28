@@ -1,9 +1,9 @@
 const functions = require("firebase-functions");
 const express = require('express');
 const cors = require('cors');
-const stripe = require("stripe")(
-  "sk_test_51LHHpWF84wgwWbHVztIUb5eTBgEfvgveG5xSPSZlhPM54BF6XpMLizGCjwpC7ygno9SVkayvncWpVatfGtH9nJzs00j9BSF73l"
-);
+const stripe = require("stripe");
+
+const STRIPE_KEY = process.env.STRIPE_KEY;
 //(http://localhost:5001/my-project-3d62b/us-central1/api).
 
 
